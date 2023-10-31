@@ -53,6 +53,22 @@ namespace WindowsFormsApp2
                 txbValor1.Text = valor3.ToString();
             }
 
+            //Achando o numero do meio
+            if ( ( valor1 < valor2 && valor1 > valor3 ) || ( valor1 > valor2 && valor1 < valor3 ) )
+            {
+                txbValor2.Text = valor1.ToString();
+            }
+
+            else if ( ( valor2 < valor1 && valor2 > valor3 ) || ( valor2 > valor1 && valor2 < valor3 ) )
+            {
+                txbValor2.Text = valor2.ToString();
+            }
+
+            else if ( ( valor3 < valor1 && valor3 > valor2 ) || ( valor3 > valor1 && valor3 < valor2 ) )
+            {
+                txbValor2.Text = valor3.ToString();
+            }
+
             //verificando o menor numero
             if ( valor1 < valor2 && valor1 < valor3 )
             {
@@ -69,21 +85,6 @@ namespace WindowsFormsApp2
                 txbValor3.Text = valor3.ToString();
             }
 
-            //Achando o meio
-            if ( ( valor1 < valor2 && valor1 > valor3 ) || ( valor1 > valor2 && valor1 < valor3 ) )
-            {
-                txbValor2.Text = valor1.ToString();
-            }
-
-            else if ( ( valor2 < valor1 && valor2 > valor3 ) || ( valor2 > valor1 && valor2 < valor3 ) )
-            {
-                txbValor2.Text = valor2.ToString();
-            }
-
-            else if ( ( valor3 < valor1 && valor3 > valor2 ) || ( valor3 > valor1 && valor3 < valor2 ) )
-            {
-                txbValor2.Text = valor3.ToString();
-            }
 
 
 
